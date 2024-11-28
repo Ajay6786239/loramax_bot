@@ -1,0 +1,139 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.details {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 10;
+}
+
+.details p {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.details a {
+    text-decoration: none;
+    color: #1D232c;
+    font-weight: bold;
+}
+
+.details a:hover {
+    text-decoration: underline;
+}
+
+.oo {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.oo .kk {
+    font-size: 24px;
+    color: #1D232c;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+.oo .a, .oo .b, .oo .contact, .oo .c {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+.oo h2 {
+    margin: 0;
+    color: #555;
+}
+
+.oo h2 + h2 {
+    color: #1D232c;
+    font-weight: bold;
+    display: block;
+}
+
+.wood {
+    border:#1D232c,solid,4px;
+    height: 300px;
+    
+    position: relative;
+    right: 250px;
+    top: 150px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: calc(4% )
+}
+.home{
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+.contact{
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+.collection{
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+.wood img {
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+}
+
+.oo {
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.1);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.wave {
+    animation: wave 1s ease-out;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+}
+
+@media screen and (max-width: 683px) {
+    .details {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .details p {
+        padding: 8px 12px;
+    }
+}

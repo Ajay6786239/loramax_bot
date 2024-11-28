@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Contact Details</title>
+</head>
+<body>
+
+    <div class="details">
+        <p class="home"><a href="index.html">Home</a></p>
+        <p class="contact"><a href="contact.html">Contact</a></p>
+        <p class="collection"><a href="collection.html">Collections</a></p>
+    </div>
+    
+    <div class="oo" onclick="waveAnimation()">
+        <div class="a">
+            <h1 class="kk"><u>CONTACT DETAILS</u></h1>
+        </div>
+        <div class="b">
+            <h2 class="name">NAME:</h2><h2>AJAY P</h2>
+        </div>
+        <div class="contact">
+            <h2>Contact:</h2><h2>+9787432472345284</h2>
+        </div>
+        <div class="c">
+            <h2 class="email">Email:</h2><h2>agjhujjh@gmail.com</h2>
+        </div>
+    </div>
+    <div class="wood">
+        <img src="hand.png" alt="">
+    </div>
+    
+    <script>
+        function waveAnimation() {
+            document.querySelector('.oo').classList.add('wave');
+            setTimeout(() => {
+                document.querySelector('.oo').classList.remove('wave');
+            }, 1000);
+        }
+    </script>
+    
+</body>
+</html>
