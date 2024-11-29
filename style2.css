@@ -17,6 +17,7 @@ body {
     flex-direction: column;
     gap: 10px;
     z-index: 10;
+        
 }
 
 .details p {
